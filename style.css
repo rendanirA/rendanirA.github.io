@@ -78,6 +78,10 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 500;
 }
+.about-text p span{
+    margin-top: 20px;
+    text-align: center;
+}
 #grid-layout-33 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
