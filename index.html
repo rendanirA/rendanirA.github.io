@@ -23,9 +23,9 @@
             </ul>
         </nav>
         <div class="header-text">
-            
-            <h1>Hi, I'm <span>Rendani</span> <br> Ratsethana from Johannesburg.</h1>
+            <h1>Hi, I'm <span>Rendani</span> Ratsethana <br> from Johannesburg.</h1>
         </div>
+        
      </div> 
 </div>
  
@@ -68,8 +68,9 @@
 <div id=portfolio>
     <div class="container">
         <h1 class="sub-title">My work</h1>
-        <p>Coming Soon</p>
+        
         <div class="work-list">
+            <p>Coming Soon</p>
              
         </div>
 
@@ -81,17 +82,17 @@
         <div class="row">
             <div class="contact-left"> 
                 <h1 class ="sub-title">Contact Me</h1>
-                <p><i class="fas fa-brands fa-google-plus-g"></i>rratsethana@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i>rratsethana@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i>081-559-9837</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/rendmo.ratsethana" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/rendani-ratsethana-a6725516b/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     
                 </div>
-               
+                
             </div>
             <div class="contact-right">
-                <form action="/action_page.html">
+                <form name="submit-to-google-sheet" action="/submit-contact-info">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -129,5 +130,16 @@
 
 
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx6Q6SWyiuH4zr48bjw2ej1s00aFxuKSQ1cHJGZJ1SeZnv3i-46NkIKwDGSDMwNDcU/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html> 

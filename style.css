@@ -9,7 +9,7 @@ html{
 }
  body{
   background-color: white;
-  color: black;   
+  color: black;  
 }
 #header{
     width:100%;
@@ -30,9 +30,8 @@ nav{
 .logo{
     width: 140px;
 }
-.header-img{
-    filter: brightness(40%);
-}
+
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -40,7 +39,7 @@ nav ul li{
 
 }
 nav ul li a{
-    color: #fff;
+    color: #f2f2f2;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -79,7 +78,7 @@ nav ul li a:hover::after{
     font-size: 500;
 }
 .about-text p span{
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 #grid-layout-33 {
@@ -101,6 +100,10 @@ nav ul li a:hover::after{
     
     margin-right: 15px;
    
+}
+#work-list{
+    padding: 50px 0;
+    margin-top:20px 15px;
 }
 
 .contact-left{
