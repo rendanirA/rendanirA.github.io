@@ -91,15 +91,7 @@
                 </div>
                 
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet" action="/submit-contact-info">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
- 
-            </div>
+          
  
         </div>
     </div>
@@ -141,5 +133,12 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+<script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  document.getElementById("form").style.display = "none";
+  document.getElementById("thankyou_message").style.display = "block";
+});
+</script>
 </body>
 </html> 

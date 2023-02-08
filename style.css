@@ -167,5 +167,8 @@ button {
     background-color: #f2f2f2;
     padding: 10px 20px;
     margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+
   }
   
