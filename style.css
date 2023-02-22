@@ -114,6 +114,10 @@ nav ul li a{
     box-shadow: 0px 0px 10px #000000;
     margin: 80px auto  40px auto;
 }
+.grid-layout-33 li span{
+    text-align: left;
+}
+
 #portfolio{
     padding: 50px 0;
     
